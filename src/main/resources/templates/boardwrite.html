@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>BSSM 청원</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+    a{
+        color: #333333;
+    }
+    span{
+        color: #1A395D;
+    }
+    .layout {
+        margin: 0 auto;
+        width: 1000px;
+        height: 800px;
+        padding-top: 20px;
+        background-color: #F8F8F8;;
+        border-radius: 12px;
+        box-shadow: 4px 4px 20px 10px rgba(0, 0, 0, 0.25);
+    }
+    h3 {
+        display: block;
+        text-align: center;
+        padding: 20px 0 20px 0;
+        font-size: 30px;
+
+
+    }
+    h4 {
+        /* float: left; */
+        margin-left: 80px;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+    .title-input {
+        /* border: ; */
+        font-size: 21px;
+        margin-left: 80px;
+        width: 800px;
+        height: 28px;
+        border: 4px solid white;
+        border-radius: 3px;
+        box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.18);
+    }
+    .title-input:focus{
+        outline:none;
+    }
+    textarea {
+        margin-left: 80px;
+        width: 800px;
+        height: 400px;
+        font-size: 20px;
+        color: #333;
+        border: 4px solid white;
+        box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.25);
+    }
+    textarea:focus{
+        outline: none;
+    }
+    .btn{
+        width: 600px;
+        margin: 0 auto;
+        display: flex;
+        /*justify-content: space-evenly;*/
+        padding-top: 20px;
+    }
+    .btn .cancel {
+        margin-left: 180px;
+        width: 100px;
+        height: 50px;
+        font-size: 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn .write {
+        margin-left: 20px;
+        width: 100px;
+        height: 50px;
+        font-size: 25px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+<div class="layout">
+    <form action="/board/writepro" method="post" class="write-form">
+        <!--  -->
+        <h3><span>학생회</span>에게 청원합니다.🍊</h3>
+        <h4>제목</h4>
+        <input name="title" class="title-input" placeholder="제목 입력" autofocus >
+        <h4>내용</h4>
+        <textarea name="content" id="" cols="30" rows="10" placeholder="여기에 입력해주세요" autofocus ></textarea>
+
+        <div class="btn">
+            <button class="cancel"><a href="/">취소</a></button>
+            <button type="submit" class="write">작성</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+<!-- 폼  작성 하려면 뭐가 필요했더라 ...  -->
+<!-- 제목 -->
+<!-- 글 작성하는 내용 부분 -->
+<!-- 취소, 작성 버튼 -->
