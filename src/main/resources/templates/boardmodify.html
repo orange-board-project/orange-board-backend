@@ -91,7 +91,7 @@
 </style>
 <body>
 <div class="layout">
-  <form action="@{/board/update/{id}(id=${board.id})" method="post" class="write-form">
+  <form th:action="@{/board/update/{id}(id=${board.id})}" method="post" class="write-form">
     <!--  -->
     <h3><span>학생회</span>에게 청원합니다.🍊</h3>
     <h4>제목</h4>
