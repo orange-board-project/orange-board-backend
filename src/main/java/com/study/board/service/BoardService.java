@@ -20,7 +20,7 @@ public class BoardService {
 
     // 게시물 리스트 처리
     public List<Board> boardList() {
-        return boardRepository.findAll();
+        return boardRepository.findBoards();
     }
 
     // 특정 게시물 불러오기
